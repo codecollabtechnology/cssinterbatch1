@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transition with rotate</title>
+		<style type="text/css">
+			
+			.container{
+				width: 1200px;
+				background: gray;
+
+/*				root element's font size - rem*/
+/*				1rem = 16px*/
+				margin: 3rem;
+			}
+
+			.container .like{
+				width: 150px;
+				height: 50px;
+				background-color: green;
+				color: white;
+
+				text-align: center;
+				line-height: 50px;
+
+				/*display: flex;
+				justify-content: center;
+				align-items: center;*/
+
+				transition-property: transform;
+				transition-duration: 5s;
+				transition-timing-function: ease-in;
+			}
+
+			#rotate:hover{
+/*				grad = gradinas */
+/*				100grad = 90deg*/
+				transform: rotate(-200grad);
+			}
+
+			#rotatex:hover{
+				transform: rotateX(90deg);
+			}
+
+			#rotatey:hover{
+				transform: rotateY(90deg);
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="container">
+			<div id="rotate" class="like">Div1 rotate</div>
+		</div>
+
+		<div class="container">
+			<div id="rotatex" class="like">Div2 rotateX</div>
+		</div>
+		
+		<div class="container">
+			<div id="rotatey" class="like">Div3 rotateY</div>
+		</div>
+		
+
+		
+		
+	</body>
+</html>
+
+<!-- 3RO -->

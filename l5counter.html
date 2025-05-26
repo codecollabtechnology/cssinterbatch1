@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Counter</title>
+		<style>
+			
+			body{
+				counter-reset: idx;
+			}
+
+			h2::before{
+				counter-increment: idx;
+				counter-reset: subidx;
+
+				content: "Section " counter(idx) ": ";
+			}
+
+			h2{
+/*				1.1,1.2*/
+/*				counter-increment: subidx;*/
+				counter-reset: subidx;
+			}	
+
+			h3::before{
+				counter-increment: subidx;
+				content: "Lesson : " counter(idx) "." counter(subidx) ": ";
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<h1>Our Lessons Plan</h1>
+
+		<h2>Web Development Foundation</h2>
+		<h3>Html</h3>
+		<h3>CSS</h3>
+		<h3>JavaScript</h3>
+		<h3>Bootstrap</h3>
+		<h3>Jquery</h3>
+		<h3>Github</h3>
+
+		<h2>CSS Class</h2>
+		<h3>CSS Intermediate</h3>
+		<h3>Bootstrap</h3>
+		<h3>Tailwind CSS</h3>
+
+		<h2>JavaScript Class</h2>
+		<h3>Jquery</h3>
+		<h3>JavaScript ES6</h3>
+		<h3>React.js</h3>
+		<h3>Node.js</h3>
+
+		<h2>Database Class</h2>
+		<h3>Mysql</h3>
+		<h3>Mongo db</h3>
+
+		<h2>PHP Class</h2>
+		<h3>PHP OOP</h3>
+		<h3>Laravel</h3>
+
+
+
+
+
+		
+	</body>
+</html>
+
+<!-- 25CU -->

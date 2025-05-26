@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clip Path</title>
+	<style type="text/css">
+		
+		.square{
+			width: 200px;
+			height: 200px;
+			background-color: green;
+		}
+
+		.circle{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+
+			border-radius: 50%;
+		}
+
+		.triangle{
+			width: 0px;
+			height: 0px;
+/*			background-color: skyblue;*/
+
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+
+			border-bottom: 100px solid green;
+		}
+
+		.squareshape{
+			width: 100px;
+			height: 100px;
+			background-color: purple;
+
+			float: right;
+			margin-left: 20px;
+		}
+
+		.circleshape{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+
+			border-radius: 50%;
+
+			float: left;
+			margin-right: 20px;
+		}
+
+		.ellipseshape{
+			width: 100px;
+			height: 100px;
+			background-color: gold;
+			clip-path: ellipse(50% 70% );
+			shape-outside: ellipse(50% 70%);
+
+			float: left;
+			margin-right: 20px;
+		}
+
+		.polygonshape{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			clip-path: polygon(13% 14%, 79% 15%, 80% 33%, 53% 33%, 53% 79%, 34% 79%, 34% 33%, 13% 34%);
+			shape-outside: polygon(13% 14%, 79% 15%, 80% 33%, 53% 33%, 53% 79%, 34% 79%, 34% 33%, 13% 34%);
+
+			float: left;
+			margin-right: 20px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<h1>Clippath</h1>
+
+	<div class="square">Square</div>
+
+	<hr/>
+
+	<div class="circle">Circle</div>
+
+	<hr/>
+
+	<div class="triangle">Triangle</div>
+
+	<hr/>
+
+	<div class="squareshape">Squareshape</div>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+	<br/><br/>
+	<hr/>
+
+	<div class="circleshape">Cricleshape</div>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+	<br/><br/>
+	<hr/>
+
+	<div class="ellipseshape">Ellipse Shape</div>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+	<br/><br/>
+	<hr/>
+
+	<div class="polygonshape">Polygon Shape</div>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+	<br/><br/>
+</body>
+</html>
+
+<!-- 14CS 
+
+5 day absent
+2 day
+
+over 7 days
+
+-->

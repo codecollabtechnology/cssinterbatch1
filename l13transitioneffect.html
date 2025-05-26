@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transition Effect</title>
+		<style type="text/css">
+			
+			.container{
+				width: 1200px;
+				background: gray;
+
+/*						t/b   l/r*/
+				margin: 10px 0;
+			}
+
+			.container .like{
+				width: 150px;
+				height: 50px;
+				background-color: green;
+				font-size: 20px;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				border-radius: 3px;
+
+				transition-property: transform;
+				transition-duration: 5s;
+
+			}
+
+			.container .like:hover{
+				transform: translate(1050px);
+			}
+
+			#ease{
+/*									b slow,mid fast ,end show*/
+				transition-timing-function: ease;
+			}
+
+			#linear{
+/*									regular*/
+				transition-timing-function: linear;
+			}
+
+			#easein{
+/*								b slow and speed up*/
+				transition-timing-function: ease-in;
+			}
+
+			#easeout{
+/*								b fast and slow down*/
+				transition-timing-function: ease-out;
+			}
+
+			#easeinout{
+/*								b slow , mid fast ,end slow*/
+				transition-timing-function: ease-in-out;
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		
+		<div class="container">
+			<div id="ease" class="like">Div1 Ease</div>
+		</div>
+
+		<div class="container">
+			<div id="linear" class="like">Div2 linear</div>
+		</div>
+
+		<div class="container">
+			<div id="easein" class="like">Div3 Easein</div>
+		</div>
+
+		<div class="container">
+			<div id="easeout" class="like">Div4 Easeout</div>
+		</div>
+
+		<div class="container">
+			<div id="easeinout" class="like">Div5 Easeinout</div>
+		</div>
+
+
+	</body>
+</html>

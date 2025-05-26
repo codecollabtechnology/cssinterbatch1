@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transform with origin</title>
+        <style type="text/css">
+
+        body{
+            /* viewport height */
+            /* viewport width - wh  */
+            height: 100vh;
+
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+            display: grid;
+            place-items: center;
+        }
+
+        img{
+            width: 400px;
+            height: 250px;
+
+            /* default */
+            /* transform-origin: center; */
+
+            /* transform-origin: top; */
+            /* transform-origin: bottom; */
+            /* transform-origin: left; */
+            /* transform-origin: right; */
+
+            /* transform-origin: left top; */
+            /* transform-origin: right top; */
+            /* transform-origin: left bottom; */
+            /* transform-origin: right bottom; */
+
+            /* transform-origin: 0%; */
+            /* transform-origin: 50%; */
+            transform-origin: 100%;
+
+            /* transition-property: transform;
+            transition-duration: 2s;
+            transition-timing-function: linear; */
+
+                    /* short hand */
+            transition: transform 2s linear;
+        }
+
+        img:hover{
+            /* transform: rotateX(45deg); */
+            transform: rotateY(45deg);
+        }
+           
+
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <img src="./img/monkey.jpg" alt="monkey"/>
+        </div>
+
+    </body>
+</html>
+
+
+<!-- 10OR -->

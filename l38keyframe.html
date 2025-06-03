@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>keyframes</title>
+        <style type="text/css">
+
+            body{
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .box{
+                width: 150px;
+                height: 150px;
+                background-color: steelblue;
+
+                animation-name: key1; 
+                animation-duration: 5s; 
+            }
+
+            @keyframes key1{
+                0%{
+                    transform: translate(0px);
+                }
+                50%{
+                    transform: translate(500px);
+                }
+                100%{
+                    transform: translate(1000px);
+                }
+            }
+
+            
+        
+        </style>
+    </head>
+    <body>
+
+        <div class="box"></div>
+
+    </body>
+</html>
+
+
+
+<!-- 
+solid
+dotted
+dashed
+double
+groove
+ridge
+inset
+outset
+hidden
+none -->
+
+<!-- 31EM -->

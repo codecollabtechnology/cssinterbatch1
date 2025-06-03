@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>keyframes</title>
+        <style type="text/css">
+
+            body{
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .box1{
+                width: 150px;
+                height: 150px;
+                background-color: steelblue;
+
+                /* animation-name: b1ani;  */
+                /* animation-duration: 5s;  */
+
+                /* animation-fill-mode: backwards; */
+                animation-fill-mode: forwards;
+
+                animation-delay: 3s;
+            }
+            
+            @keyframes b1ani{
+                0%{
+                    transform: translate(0px);
+                }
+                50%{
+                    transform: translate(500px);
+                }
+                100%{
+                    transform: translateX(500px) translateY(500px);
+                }
+            }
+
+            .box2{
+                width: 150px;
+                height: 150px;
+                background-color: violet;
+
+                /* animation-name: b2ani;  */
+                /* animation-duration: 5s;  */
+            }
+
+            @keyframes b2ani{
+                0%{
+                    background-color: pink;
+                    transform: translate(0px);
+                }
+                25%{
+                    background-color: aquamarine;
+                    transform: translate(300px);
+                }
+                50%{
+                    background-color: green;
+                    transform: translateX(300px) translateY(300px);
+                }
+                75%{
+                    background-color: red;
+                    transform: translate(0,300px);
+                }
+                100%{
+                    background-color: violet;
+                    transform: 0px;
+                }
+            }
+
+            .box3{
+                width: 150px;
+                height: 150px;
+                background-color: purple;
+
+                position: absolute;
+                /* position: relative; */
+
+                animation-name: b3ani; 
+                animation-duration: 5s; 
+            }
+
+            @keyframes b3ani{
+                0%{
+                    left: 0;
+                }
+                12.5%{
+                    left: 100px;
+                }
+                25%{
+                    left: -100px;
+                }
+                37.5%{
+                    left: -50px;
+                }
+                50%{
+                    left: 50px;
+                }
+                62.5%{
+                    left: -25px;
+                }
+                75%{
+                    left: 25px;
+                }
+                87.5%{
+                    left: -12.5px;
+                }
+                100%{
+                    left: 12.5px;
+                }
+            }
+
+        
+
+            
+            
+        
+        </style>
+    </head>
+    <body>
+
+        <div class="box1">Box 1</div>
+        <hr/>
+        <div class="box2">Box 2</div>
+        <hr/>
+        <div class="box3">Box 3</div>
+
+    </body>
+</html>
+
+
+
+<!-- 
+solid
+dotted
+dashed
+double
+groove
+ridge
+inset
+outset
+hidden
+none -->
+
+<!-- 31EM -->

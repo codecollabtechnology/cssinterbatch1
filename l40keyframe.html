@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>keyframes</title>
+        <style type="text/css">
+
+            body{
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .box1{
+                width: 150px;
+                height: 150px;
+                background-color: steelblue;
+
+                animation-name: box1ani; 
+                animation-duration: 5s; 
+
+                /* animation-fill-mode: backwards; */
+                animation-fill-mode: forwards;
+
+                animation-iteration-count: infinite;
+
+                /* animation-timing-function: ease; */
+                /* animation-timing-function: ease-in; */
+                /* animation-timing-function: ease-out; */
+                /* animation-timing-function: ease-in-out; */
+                animation-timing-function: linear;
+
+                /* animation-direction: normal; */
+                /* animation-direction: reverse; */
+                animation-direction: alternate;
+                /* animation-direction: alternate-reverse; */
+
+                /* animation-delay: 3s; */
+            }
+            
+            @keyframes box1ani{
+                0%{
+                    transform: translate(0px);
+                }
+                50%{
+                    transform: translate(600px);
+                }
+                100%{
+                    transform: translate(600px,600px);
+                }
+            }
+          
+
+
+            
+            
+        
+        </style>
+    </head>
+    <body>
+
+        <div class="box1">Box 1</div>
+
+        <hr/>
+      
+
+    </body>
+</html>
+
+
+
+<!-- 
+solid
+dotted
+dashed
+double
+groove
+ridge
+inset
+outset
+hidden
+none -->
+
+<!-- 3KF -->
